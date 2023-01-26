@@ -1,6 +1,6 @@
 <?php
-ob_start();
 session_start();
+if
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,10 +12,13 @@ session_start();
 </head>
 <body>
     <?php
-    echo "hi";
+    echo "hi<br>";
     ?>
-    <form method="post"></form>
-    <input type="text" name="seriousShit" title="Write something" required><br>
+    <form method="post">
+        <input type="text" name="seriousShit" placeholder="Write something" required><br>
+        <button name="button" type="submit" value="1" formtarget="_self">Send it</button><br>
+    </form>
+    
     <?php
     if ($bitch == true) {
         echo "well well well";
