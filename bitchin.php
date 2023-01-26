@@ -14,7 +14,8 @@ session_start();
     <?php
     echo "hi";
     ?>
-    <input type="text" name="">
+    <form method="post"></form>
+    <input type="text" name="seriousShit" title="Write something" required><br>
     <?php
     if ($bitch == true) {
         echo "well well well";
