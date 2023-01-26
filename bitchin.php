@@ -1,13 +1,7 @@
 <?php
-echo "hi";
-
-
-
-if ($bitch == true) {
-    echo "well well well";
-}
+ob_start();
+session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +11,14 @@ if ($bitch == true) {
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+    echo "hi";
+    ?>
+    <input type="text" name="">
+    <?php
+    if ($bitch == true) {
+        echo "well well well";
+    }
+    ?>
 </body>
 </html>
