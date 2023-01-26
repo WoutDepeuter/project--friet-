@@ -1,6 +1,9 @@
 <?php
 session_start();
-if
+if (empty($_POST["seriousShit"]) == false) {
+    $bitch = true;
+    $_POST["seriousShit"] == "";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,11 +21,11 @@ if
         <input type="text" name="seriousShit" placeholder="Write something" required><br>
         <button name="button" type="submit" value="1" formtarget="_self">Send it</button><br>
     </form>
-
+    
     <?php
     if ($bitch == true) {
         echo "well well well";
     }
     ?>
 </body>
-</html> 
+</html>
