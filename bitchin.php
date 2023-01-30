@@ -4,6 +4,7 @@ if (empty($_POST["seriousShit"]) == false) {
     $bitch = true;
     $_POST["seriousShit"] == "";
 }
+$_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Spicyo</title>
+    <title>alluah snackbar</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,7 +33,7 @@
 </head>
 <!-- body -->
 
-<body class="main-layout blog_page">
+<body class="main-layout about_page">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
@@ -49,19 +53,19 @@
                 <ul class="list-unstyled components">
 
                     <li >
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="recipe.html">Recipe</a>
+                        <a href="index.html">thuis</a>
                     </li>
                     <li class="active">
+                        <a href="about.html">over ons</a>
+                    </li>
+                    <li>
+                        <a href="recipe.html">recept</a>
+                    </li>
+                    <li>
                         <a href="blog.html">Blog</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.html">contacteer ons</a>
                     </li>
                 </ul>
 
@@ -82,7 +86,7 @@
                     <div class="full">
                         <div class="right_header_info">
                             <ul>
-                                <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
+                                <li class="dinone">Contacteer ons : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#"><a href="#">demo@gmail.com</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/location_icon.png" alt="#"><a href="#">104 New york , USA</a></li>
                                 <li class="button_user"><a class="button active" href="#">Login</a><a class="button" href="#">Register</a></li>
@@ -100,69 +104,50 @@
         </div>
     </header>
     <!-- end header -->
-<div class="yellow_bg">
+    
+    <div class="yellow_bg">
    <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="title">
-                     <h2>Our Blog</h2>
+                     <h2>About</h2>
                     
                   </div>
                </div>
             </div>
           </div>
 </div>
-
-<!-- blog -->
-<div class="blog">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="title">
-          <i><img src="images/title.png" alt="#"/></i>
-          
-          <span>when looking at its layout. The point of using Lorem</span>
-        </div>
-      </div>
+<!-- about -->
+<div class="about">
+    <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+             <div class="title">
+                <i><img src="images/title.png" alt="#"/></i>
+                
+                <span>iets over frieten ik kwni dit is placeholder tekst about-img
+                   <br> page when looking at its layout. The point of using Lorem
+                </span>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+             <div class="about_box">
+                 <h3>Best Food</h3>
+                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscureContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard </p>
+                 <a href="#">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+             </div>
+         </div>
+          <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
+             <div class="about_img">
+                 <figure><img src="images/about-img.jpg" alt="#/"></figure>
+             </div>
+         </div>      
+       </div> 
     </div>
-    <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img1.png" alt="#"/>
-             <span>02 FEB 2019</span>
-            </figure>
-          </div>
-          <h3>Spicy Barger</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img2.png" alt="#"/>
-             <span>02 FEB 2019</span>
-            </figure>
-          </div>
-          <h3>Egg & Tosh</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img3.png" alt="#"/>
-             <span>02 FEB 2019</span>
-            </figure>
-          </div>
-          <h3>Pizza</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
-<!-- end blog -->
+<!-- end about -->
 
 
     <!-- footer -->
@@ -210,27 +195,24 @@
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
-                            <li > <a href="index.html">Home</a></li>
-                            <li> <a href="about.html">About</a></li>
-                            <li> <a href="recipe.html">Recipe</a></li>
-                            <li class="active"> <a href="blog.html">Blog</a></li>
-                            <li> <a href="contact.html">Contact us</a></li>
+                            <li > <a href="index.html">thuis</a></li>
+                            <li class="active"> <a href="about.html">over ons</a></li>
+                            <li> <a href="recipe.html">Recept</a></li>
+                            <li> <a href="blog.html">blog</a></li>
+                            <li> <a href="contact.html">Contacteer ons</a></li>
                         </ul>
                     </div>
                     <div class="col-md-12">
                         <div class="new">
-                            <h3>Newsletter</h3>
+                            <h3>nieuwsbrief</h3>
                             <form class="newtetter">
                                 <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                                <button class="submit">Subscribe</button>
+                                <button class="submit">abboneer</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="container">
-                    <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
                 </div>
             </div>
         </div>

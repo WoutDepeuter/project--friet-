@@ -1,6 +1,9 @@
+<?php
+session_start();
+$_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 
 <head>
     <!-- basic -->
@@ -10,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>alluah snackbar</title>
+    <title>Spicyo</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -30,7 +33,7 @@
 </head>
 <!-- body -->
 
-<body class="main-layout about_page">
+<body class="main-layout Contact_page">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
@@ -50,19 +53,19 @@
                 <ul class="list-unstyled components">
 
                     <li >
-                        <a href="index.html">thuis</a>
-                    </li>
-                    <li class="active">
-                        <a href="about.html">over ons</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="recipe.html">recept</a>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="recipe.html">Recipe</a>
                     </li>
                     <li>
                         <a href="blog.html">Blog</a>
                     </li>
-                    <li>
-                        <a href="contact.html">contacteer ons</a>
+                    <li class="active">
+                        <a href="contact.html">Contact Us</a>
                     </li>
                 </ul>
 
@@ -83,7 +86,7 @@
                     <div class="full">
                         <div class="right_header_info">
                             <ul>
-                                <li class="dinone">Contacteer ons : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
+                                <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#"><a href="#">demo@gmail.com</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/location_icon.png" alt="#"><a href="#">104 New york , USA</a></li>
                                 <li class="button_user"><a class="button active" href="#">Login</a><a class="button" href="#">Register</a></li>
@@ -101,52 +104,6 @@
         </div>
     </header>
     <!-- end header -->
-    
-    <div class="yellow_bg">
-   <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="title">
-                     <h2>About</h2>
-                    
-                  </div>
-               </div>
-            </div>
-          </div>
-</div>
-<!-- about -->
-<div class="about">
-    <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-             <div class="title">
-                <i><img src="images/title.png" alt="#"/></i>
-                
-                <span>iets over frieten ik kwni dit is placeholder tekst about-img
-                   <br> page when looking at its layout. The point of using Lorem
-                </span>
-             </div>
-          </div>
-       </div>
-       <div class="row">
-         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-             <div class="about_box">
-                 <h3>Best Food</h3>
-                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscureContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard </p>
-                 <a href="#">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-             </div>
-         </div>
-          <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
-             <div class="about_img">
-                 <figure><img src="images/about-img.jpg" alt="#/"></figure>
-             </div>
-         </div>      
-       </div> 
-    </div>
-</div>
-<!-- end about -->
-
-
     <!-- footer -->
     <fooetr>
         <div class="footer">
@@ -192,24 +149,27 @@
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
-                            <li > <a href="index.html">thuis</a></li>
-                            <li class="active"> <a href="about.html">over ons</a></li>
-                            <li> <a href="recipe.html">Recept</a></li>
+                            <li > <a href="index.html">Home</a></li>
+                            <li> <a href="about.html">About</a></li>
+                            <li> <a href="recipe.html">Recipe</a></li>
                             <li> <a href="blog.html">blog</a></li>
-                            <li> <a href="contact.html">Contacteer ons</a></li>
+                            <li class="active"> <a href="contact.html">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-12">
                         <div class="new">
-                            <h3>nieuwsbrief</h3>
+                            <h3>Newsletter</h3>
                             <form class="newtetter">
                                 <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                                <button class="submit">abboneer</button>
+                                <button class="submit">Subscribe</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
                 </div>
             </div>
         </div>

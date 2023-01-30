@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,8 +32,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <!-- body -->
- 
-<body class="main-layout Recipes_page">
+
+<body class="main-layout blog_page">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
@@ -52,16 +56,16 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">over ons</a>
-                    </li>
-                    <li class="active">
-                        <a href="recipe.html">recept</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
+                        <a href="recipe.html">Recipe</a>
+                    </li>
+                    <li class="active">
                         <a href="blog.html">Blog</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contacteer ons</a>
+                        <a href="contact.html">Contact Us</a>
                     </li>
                 </ul>
 
@@ -82,10 +86,10 @@
                     <div class="full">
                         <div class="right_header_info">
                             <ul>
-                                <li class="dinone">Contacteer ons : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
+                                <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#"><a href="#">demo@gmail.com</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/location_icon.png" alt="#"><a href="#">104 New york , USA</a></li>
-                                <li class="button_user"><a class="button active" href="#">Login</a><a class="button" href="#">Registreer</a></li>
+                                <li class="button_user"><a class="button active" href="#">Login</a><a class="button" href="#">Register</a></li>
                                 <li><img style="margin-right: 15px;" src="images/search_icon.png" alt="#"></li>
                                 <li>
                                     <button type="button" id="sidebarCollapse">
@@ -100,123 +104,69 @@
         </div>
     </header>
     <!-- end header -->
-    
-    <div class="yellow_bg">
+<div class="yellow_bg">
    <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="title">
-                     <h2>Our Recepten</h2>
+                     <h2>Our Blog</h2>
                     
                   </div>
                </div>
             </div>
           </div>
 </div>
-    <!-- section -->
-    <section class="resip_section">
-        <div class="container">
-            <div class="row">
-               
-                <div class="col-md-12">
-            <div class="owl-carousel owl-theme">
 
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs1.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>handgemaakt</h3>
-                        <h4><span class="theme_color">$</span>10</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs2.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Noodles</h3>
-                        <h4><span class="theme_color">$</span>20</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs3.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Egg</h3>
-                        <h4><span class="theme_color">$</span>30</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs4.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Sushi </h3>
-                        <h4><span class="theme_color">$</span>40</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs5.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>The koffie pause met u mama</h3>
-                        <h4><span class="theme_color">$</span>50</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs1.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Homemade</h3>
-                        <h4><span class="theme_color">$</span>10</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs2.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Noodles</h3>
-                        <h4><span class="theme_color">$</span>20</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs3.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Egg</h3>
-                        <h4><span class="theme_color">$</span>30</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs4.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Sushi Dizzy</h3>
-                        <h4><span class="theme_color">$</span>40</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs5.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>The Coffee Break</h3>
-                        <h4><span class="theme_color">$</span>50</h4>
-                    </div>
-                </div>
-
-            </div>
+<!-- blog -->
+<div class="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <i><img src="images/title.png" alt="#"/></i>
+          
+          <span>when looking at its layout. The point of using Lorem</span>
         </div>
-            </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
+        <div class="blog_box">
+          <div class="blog_img_box">
+            <figure><img src="images/blog_img1.png" alt="#"/>
+             <span>02 FEB 2019</span>
+            </figure>
+          </div>
+          <h3>Spicy Barger</h3>
+          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
         </div>
-    </section>
+      </div>
+       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
+        <div class="blog_box">
+          <div class="blog_img_box">
+            <figure><img src="images/blog_img2.png" alt="#"/>
+             <span>02 FEB 2019</span>
+            </figure>
+          </div>
+          <h3>Egg & Tosh</h3>
+          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
+        </div>
+      </div>
+       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="blog_box">
+          <div class="blog_img_box">
+            <figure><img src="images/blog_img3.png" alt="#"/>
+             <span>02 FEB 2019</span>
+            </figure>
+          </div>
+          <h3>Pizza</h3>
+          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end blog -->
 
 
     <!-- footer -->
@@ -266,8 +216,8 @@
                         <ul class="lik">
                             <li > <a href="index.html">Home</a></li>
                             <li> <a href="about.html">About</a></li>
-                            <li class="active"> <a href="recipe.html">Recipe</a></li>
-                            <li> <a href="blog.html">blog</a></li>
+                            <li> <a href="recipe.html">Recipe</a></li>
+                            <li class="active"> <a href="blog.html">Blog</a></li>
                             <li> <a href="contact.html">Contact us</a></li>
                         </ul>
                     </div>
@@ -322,28 +272,6 @@
             });
         });
     </script>
-
-<script>
-         $(document).ready(function() {
-           var owl = $('.owl-carousel');
-           owl.owlCarousel({
-             margin: 10,
-             nav: true,
-             loop: true,
-             responsive: {
-               0: {
-                 items: 1
-               },
-               600: {
-                 items: 2
-               },
-               1000: {
-                 items: 5
-               }
-             }
-           })
-         })
-      </script>
 
 </body>
 
