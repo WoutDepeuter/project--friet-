@@ -110,7 +110,7 @@ $_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
             <div class="row">
                <div class="col-md-12">
                   <div class="title">
-                     <h2>Our Recepten</h2>
+                     <h2>onze Recepten</h2>
                     
                   </div>
                </div>
