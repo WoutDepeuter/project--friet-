@@ -41,11 +41,9 @@ if (empty($_POST["logout"]) != true) {
 <!-- body -->
 <body class="main-layout about_page">
     <!-- loader  -->
-    <!--
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
     </div>
-    -->
     <div class="wrapper">
     <!-- end loader -->
     <div class="sidebar">
@@ -90,7 +88,19 @@ if (empty($_POST["logout"]) != true) {
                                 <li class="dinone">Contacteer ons : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#"><a href="#">demo@gmail.com</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/location_icon.png" alt="#"><a href="#">104 New york , USA</a></li>
-                                <li class="button_user"><a class="button active" href="#">Login</a><a class="button" href="#">Register</a></li>
+                                <li class="button_user">
+                                    <?php
+                                    if (empty($_SESSION["loggedIn"]) == true || $_SESSION["loggedIn"] != true) { ?>
+                                        <form method="post">
+                                            <a class="button active"><?php echo '<button class="none" name="optieInlog" type="submit" value="1" formaction="login.php">Login</button>'; ?></a>
+                                            <a class="button" name="optieInlog" type="submit" value="2" formaction="login.php" href>Registreer</a>
+                                        </form>
+                                    <?php } else { ?>
+                                        <form method="post">
+                                            <a class="button active"><?php echo '<button class="none" name="logout" type="submit" value="1" formtarget="_self" onclick="UnsetLogin()">Logout</button>'; ?></a>
+                                        </form>
+                                    <?php } ?>
+                                </li>
                                 <li><img style="margin-right: 15px;" src="images/search_icon.png" alt="#"></li>
                                 <li>
                                     <button type="button" id="sidebarCollapse">

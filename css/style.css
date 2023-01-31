@@ -128,6 +128,17 @@
      padding: 0;
      cursor: pointer;
 }
+button[class="none"] {
+     background: none;
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
  .full {
      float: left;
      width: 100%;
@@ -932,4 +943,3 @@
      color: #fff;
      font-weight: 500;
 }
- 
