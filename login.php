@@ -69,20 +69,6 @@ if (empty($_POST["logout"]) != true) {
                 <li>
                     <a href="contact.php">contacteer ons</a>
                 </li>
-                <li>
-                    <?php
-                    if (empty($_SESSION["loggedIn"]) == true || $_SESSION["loggedIn"] != true) { ?>
-                       <a href="login.php">Login</a>
-                       <?php
-                    } else { ?>
-                        <form method="post">
-                        <button name="logout" type="submit" value="1"
-                        formtarget="_self" onclick="UnsetLogin()">Logout</button>
-                        </form>
-                        <?php
-                    }
-                    ?>
-                </li>
             </ul>
         </nav>
     </div>
@@ -103,7 +89,16 @@ if (empty($_POST["logout"]) != true) {
                                 <li class="dinone">Contacteer ons : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#"><a href="#">demo@gmail.com</a></li>
                                 <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/location_icon.png" alt="#"><a href="#">104 New york , USA</a></li>
-                                <li class="button_user"><a class="button active" href="#">Login</a><a class="button" href="#">Register</a></li>
+                                <li class="button_user">
+                                    <?php
+                                    if (empty($_SESSION["loggedIn"]) == true || $_SESSION["loggedIn"] != true) { ?>
+                                        <a class="button active" href="#">Login</a><a class="button" href="#">Registreer</a>
+                                    <?php } else { ?>
+                                        <form method="post">
+                                            <input class="button active" name="logout" type="submit" value="1" formtarget="_self" onclick="UnsetLogin()">Logout</input>
+                                        </form>
+                                    <?php } ?>
+                                </li>
                                 <li><img style="margin-right: 15px;" src="images/search_icon.png" alt="#"></li>
                                 <li>
                                     <button type="button" id="sidebarCollapse">

@@ -1,5 +1,15 @@
 <?php
 session_start();
+$_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
+function UnsetLogin()
+{
+   unset($_SESSION["loggedIn"]); 
+}
+if (empty($_POST["logout"]) != true) {
+   UnsetLogin();
+   $_POST["logout"] = "";
+}
+
 if (empty($_POST["seriousShit"]) == false) {
     $bitch = true;
     $_POST["seriousShit"] == "";

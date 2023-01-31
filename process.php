@@ -70,20 +70,6 @@ if (empty($_POST["logout"]) != true) {
                 <li>
                     <a href="contact.php">contacteer ons</a>
                 </li>
-                <li>
-                    <?php
-                    if (empty($_SESSION["loggedIn"]) == true || $_SESSION["loggedIn"] != true) { ?>
-                       <a href="login.php">Login</a>
-                       <?php
-                    } else { ?>
-                        <form method="post">
-                        <button name="logout" type="submit" value="1"
-                        formtarget="_self" onclick="UnsetLogin()">Logout</button>
-                        </form>
-                        <?php
-                    }
-                    ?>
-                </li>
             </ul>
         </nav>
     </div>
@@ -243,7 +229,7 @@ if (empty($_POST["logout"]) != true) {
         } // Als de gebruiker heeft aangeduid dat die niet wilt registreren
         else if ($_REQUEST["registreren"] == "0") {
             // Een insert statement declareren
-            $sql = "SELECT 'user-pass' FROM users WHERE 'user-name' = ?";
+            $sql = "SELECT `user-pass` FROM users WHERE `user-name` = ?";
             // Een insert statement voorbereiden
             if ($stmt = $conn->prepare($sql)) {
                 // Variabelen binden aan de voorbereidde insert als 'parameters'
@@ -279,6 +265,8 @@ if (empty($_POST["logout"]) != true) {
             } else {
                 echo "Sorry, maar iets ging fout bij de paswoord verificatie.<br>
                 U zal worden herleidt naar de registratie pagina.<br>";
+                echo $_REQUEST["pass"];
+                echo $hash;
                 header("Refresh: 4; url=/project--friet-/login.php", true, 0);
                 exit();
             }
