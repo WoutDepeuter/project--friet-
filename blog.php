@@ -53,7 +53,7 @@ $_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
                 <ul class="list-unstyled components">
 
                     <li >
-                        <a href="index.php">Home</a>
+                        <a href="index.php">huis</a>
                     </li>
                     <li>
                         <a href="about.php">About</a>

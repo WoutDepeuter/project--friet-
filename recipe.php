@@ -53,7 +53,7 @@ $_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
                 <ul class="list-unstyled components">
 
                     <li >
-                        <a href="index.php">Home</a>
+                        <a href="index.php">huis</a>
                     </li>
                     <li>
                         <a href="about.php">over ons</a>
@@ -175,7 +175,7 @@ $_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
                         <img src="images/rs1.png" alt="#" />
                     </div>
                     <div class="product_blog_cont">
-                        <h3>Homemade</h3>
+                        <h3>huismade</h3>
                         <h4><span class="theme_color">$</span>10</h4>
                     </div>
                 </div>
@@ -268,7 +268,7 @@ $_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
-                            <li > <a href="index.php">Home</a></li>
+                            <li > <a href="index.php">huis</a></li>
                             <li> <a href="about.php">About</a></li>
                             <li class="active"> <a href="recipe.php">Recipe</a></li>
                             <li> <a href="blog.php">blog</a></li>
