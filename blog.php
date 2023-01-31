@@ -214,7 +214,7 @@ $_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
-                            <li > <a href="index.php">Home</a></li>
+                            <li > <a href="index.php">huis</a></li>
                             <li> <a href="about.php">About</a></li>
                             <li> <a href="recipe.php">Recipe</a></li>
                             <li class="active"> <a href="blog.php">Blog</a></li>
