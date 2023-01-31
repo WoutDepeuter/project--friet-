@@ -286,10 +286,7 @@ $_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="container">
-                    <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
-                </div>
+           
             </div>
         </div>
     </fooetr>
