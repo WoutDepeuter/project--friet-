@@ -61,19 +61,19 @@ if (empty($_POST["logout"]) != true) {
                 <ul class="list-unstyled components">
 
                     <li >
-                        <a href="index.html">Home</a>
+                        <a href="index.php">huis</a>
                     </li>
                     <li>
-                        <a href="about.html">over ons</a>
+                        <a href="about.php">over ons</a>
                     </li>
                     <li class="active">
-                        <a href="recipe.html">recept</a>
+                        <a href="recipe.php">recept</a>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <a href="blog.php">Blog</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contacteer ons</a>
+                        <a href="contact.php">Contacteer ons</a>
                     </li>
                 </ul>
 
@@ -87,7 +87,7 @@ if (empty($_POST["logout"]) != true) {
             <div class="row">
                 <div class="col-md-3">
                     <div class="full">
-                        <a class="logo" href="index.html"><img src="images/logo.png" alt="#" /></a>
+                        <a class="logo" href="index.php"><img src="images/logo.png" alt="#" /></a>
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -183,7 +183,7 @@ if (empty($_POST["logout"]) != true) {
                         <img src="images/rs1.png" alt="#" />
                     </div>
                     <div class="product_blog_cont">
-                        <h3>Homemade</h3>
+                        <h3>huismade</h3>
                         <h4><span class="theme_color">$</span>10</h4>
                     </div>
                 </div>
@@ -271,16 +271,16 @@ if (empty($_POST["logout"]) != true) {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer_logo">
-                          <a href="index.html"><img src="images/logo1.jpg" alt="logo" /></a>
+                          <a href="index.php"><img src="images/logo1.jpg" alt="logo" /></a>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
-                            <li > <a href="index.html">Home</a></li>
-                            <li> <a href="about.html">About</a></li>
-                            <li class="active"> <a href="recipe.html">Recipe</a></li>
-                            <li> <a href="blog.html">blog</a></li>
-                            <li> <a href="contact.html">Contact us</a></li>
+                            <li > <a href="index.php">huis</a></li>
+                            <li> <a href="about.php">About</a></li>
+                            <li class="active"> <a href="recipe.php">Recipe</a></li>
+                            <li> <a href="blog.php">blog</a></li>
+                            <li> <a href="contact.php">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-12">
@@ -294,10 +294,7 @@ if (empty($_POST["logout"]) != true) {
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="container">
-                    <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
-                </div>
+           
             </div>
         </div>
     </fooetr>

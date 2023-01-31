@@ -80,7 +80,7 @@ if (empty($_POST["logout"]) != true) {
             <div class="row">
                 <div class="col-md-3">
                     <div class="full">
-                        <a class="logo" href="index.html"><img src="images/logo.png" alt="#" /></a>
+                        <a class="logo" href="index.php"><img src="images/logo.png" alt="#" /></a>
                     </div>
                 </div>
                 <div class="col-md-9">
