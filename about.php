@@ -53,19 +53,19 @@ $_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
                 <ul class="list-unstyled components">
 
                     <li >
-                        <a href="index.html">thuis</a>
+                        <a href="index.php">thuis</a>
                     </li>
                     <li class="active">
-                        <a href="about.html">over ons</a>
+                        <a href="about.php">over ons</a>
                     </li>
                     <li>
-                        <a href="recipe.html">recept</a>
+                        <a href="recipe.php">recept</a>
                     </li>
                     <li>
-                        <a href="blog.html">Blog</a>
+                        <a href="blog.php">Blog</a>
                     </li>
                     <li>
-                        <a href="contact.html">contacteer ons</a>
+                        <a href="contact.php">contacteer ons</a>
                     </li>
                 </ul>
 
@@ -79,7 +79,7 @@ $_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
             <div class="row">
                 <div class="col-md-3">
                     <div class="full">
-                        <a class="logo" href="index.html"><img src="images/logo.png" alt="#" /></a>
+                        <a class="logo" href="index.php"><img src="images/logo.png" alt="#" /></a>
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -190,16 +190,16 @@ $_SESSION["lastpage"] = $_SERVER["REQUEST_URI"];
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer_logo">
-                          <a href="index.html"><img src="images/logo1.jpg" alt="logo" /></a>
+                          <a href="index.php"><img src="images/logo1.jpg" alt="logo" /></a>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
-                            <li > <a href="index.html">thuis</a></li>
-                            <li class="active"> <a href="about.html">over ons</a></li>
-                            <li> <a href="recipe.html">Recept</a></li>
-                            <li> <a href="blog.html">blog</a></li>
-                            <li> <a href="contact.html">Contacteer ons</a></li>
+                            <li > <a href="index.php">thuis</a></li>
+                            <li class="active"> <a href="about.php">over ons</a></li>
+                            <li> <a href="recipe.php">Recept</a></li>
+                            <li> <a href="blog.php">blog</a></li>
+                            <li> <a href="contact.php">Contacteer ons</a></li>
                         </ul>
                     </div>
                     <div class="col-md-12">
