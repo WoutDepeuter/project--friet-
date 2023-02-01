@@ -128,17 +128,6 @@
      padding: 0;
      cursor: pointer;
 }
-button[class="none"] {
-     background: none;
-     color: #1f1f1f;
-     text-decoration: none !important;
-     outline: none !important;
-     -webkit-transition: all .3s ease-in-out;
-     -moz-transition: all .3s ease-in-out;
-     -ms-transition: all .3s ease-in-out;
-     -o-transition: all .3s ease-in-out;
-     transition: all .3s ease-in-out;
-}
  .full {
      float: left;
      width: 100%;
@@ -942,4 +931,51 @@ button[class="none"] {
      font-weight: bold;
      color: #fff;
      font-weight: 500;
+}
+/*------------------------------------------------------------- self added --------------------------------------------------------------------------------*/
+.button_user button.active {
+     background: #e3d105;
+     color: #fff;
+     border-color: #e3d105;
+     color: #222;
+}
+.button_user button.buttonLook {
+     color: #fff;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+     background: none;
+}
+.button_user button.buttonLook:hover {
+     color: #222;
+     background: #e3d105;
+     border-color: #e3d105;
+}
+
+.button_user button {
+     float: left;
+     min-width: 75px;
+     height: 35px;
+     text-align: center;
+     line-height: 35px;
+     position: relative;
+     top: -3px;
+     padding: 0 15px;
+     margin: 0 2px;
+}
+.button_user button {
+     float: left;
+     min-width: 75px;
+     height: 40px;
+     text-align: center;
+     line-height: 38px;
+     position: relative;
+     top: -7px;
+     padding: 0 15px;
+     margin: 0 2px;
+     border: solid #eaeaea 1px;
 }

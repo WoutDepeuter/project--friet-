@@ -93,12 +93,12 @@ if (empty($_POST["logout"]) != true) {
                                     <?php
                                     if (empty($_SESSION["loggedIn"]) == true || $_SESSION["loggedIn"] != true) { ?>
                                         <form method="post">
-                                            <a class="button active"><?php echo '<button class="none" name="optieInlog" type="submit" value="1" formtarget="_self">Login</button>'; ?></a>
-                                            <a class="button" name="optieInlog" type="submit" value="2" formtarget="_self" href>Registreer</a>
+                                            <button class="button active" name="optieInlog" type="submit" value="1" formtarget="_self">Login</button>
+                                            <button class="buttonLook" name="optieInlog" type="submit" value="2" formtarget="_self">Registreer</button>
                                         </form>
                                     <?php } else { ?>
                                         <form method="post">
-                                            <a class="button active"><?php echo '<button class="none" name="logout" type="submit" value="1" formtarget="_self" onclick="UnsetLogin()">Logout</button>'; ?></a>
+                                            <button class="button active" name="logout" type="submit" value="1" formtarget="_self" onclick="UnsetLogin()">Logout</button>
                                         </form>
                                     <?php } ?>
                                 </li>
@@ -117,77 +117,69 @@ if (empty($_POST["logout"]) != true) {
     </header>
     <!-- end header -->
     <div class="yellow_bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="title">
-                    <?php
-                    if ((empty($_POST["optieInlog"]) == true) || ($_POST["optieInlog"] == "2")) { ?>
-                       <h2>Registratie</h2>
-                       <?php
-                    } else { ?>
-                       <h2>Login</h2>
-                       <?php
-                    }
-                    ?>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <?php
+                        if ((empty($_POST["optieInlog"]) == true) || ($_POST["optieInlog"] == "2")) { ?>
+                           <h2>Registratie</h2>
+                           <?php
+                        } else { ?>
+                           <h2>Login</h2>
+                           <?php
+                        }
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- about -->
-    <?php
-    if ((empty($_POST["optieInlog"]) == true) || ($_POST["optieInlog"] == "2")) {
-        //$_SESSION["optieInlog"] = "2";
-        ?>
-        <form action="process.php" method="post">
-            <div>
-                <div class="container">
-                    Welkom tot de registratie pagina, hier kunt u zich een account registreren.<br><br>
-                    Gebruikersnaam :<br>
-                    <input type="text" name="eName" pattern="[A-z0-9À-ž\s]{2,}" title="Drie of meer characters" required><br>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
+                    <?php
+                    if ((empty($_POST["optieInlog"]) == true) || ($_POST["optieInlog"] == "2")) {
+                        ?>
+                        <form action="process.php" method="post">
+                            <div class="container">
+                                Welkom tot de registratie pagina, hier kunt u zich een account registreren.<br><br>
+                                Gebruikersnaam :<br>
+                                <input type="text" name="eName" pattern="[A-z0-9À-ž\s]{2,}" title="Drie of meer characters" required><br>
+                            </div>
+                            <div class="container">
+                                Paswoord :<br>
+                                <input type="password" name="pass" pattern=".{8,}" title="Acht of meer characters" required><br><br>
+                            </div>
+                            <div>
+                                <button name="registreren" type="submit" value="1">Registreren</button><br><br>
+                            </div>
+                        </form>
+                    <?php } else if ($_POST["optieInlog"] == "1") {
+                        //$_SESSION["optieInlog"] = "1";
+                        ?>
+                        <form action="process.php" method="post">
+                            <div class="container">
+                                Welkom tot de inlog pagina, hier kunt u zich inloggen.<br><br>
+                                Gebruikersnaam :<br>
+                                <input type="text" name="eName" pattern="[A-z0-9À-ž\s]{2,}" title="Drie of meer characters" required><br>
+                            </div>
+                            <div class="container">
+                                Paswoord :<br>
+                                <input type="password" name="pass" pattern=".{8,}" title="Acht of meer characters" required><br><br>
+                            </div>
+                            <div>
+                                <button name="registreren" type="submit" value="0">Inloggen</button><br><br>
+                            </div>
+                        </form>
+                    <?php }
+                    ?>
                 </div>
             </div>
-            <div>
-                <div class="container">
-                    Paswoord :<br>
-                    <input type="password" name="pass" pattern=".{8,}" title="Acht of meer characters" required><br>
-                </div>
-            </div>
-            <div>
-                <button name="registreren" type="submit" value="1">Registreren</button><br><br>
-            </div>
-        </form>
-        <form method="post">
-            <div>
-                Bent u al een gebruiker?<br>
-                <button name="optieInlog" type="submit" value="1" formtarget="_self">Login</button>
-            </div>
-        </form>
-    <?php } else if ($_POST["optieInlog"] == "1") {
-        //$_SESSION["optieInlog"] = "1";
-        ?>
-        <form action="process.php" method="post">
-            <div>
-                Welkom tot de inlog pagina, hier kunt u zich inloggen.<br><br>
-                Gebruikersnaam :<br>
-                <input type="text" name="eName" pattern="[A-z0-9À-ž\s]{2,}" title="Drie of meer characters" required><br>
-            </div>
-            <div>
-                Paswoord :<br>
-                <input type="password" name="pass" pattern=".{8,}" title="Acht of meer characters" required><br><br>
-            </div>
-            <div>
-                <button name="registreren" type="submit" value="0">Inloggen</button><br><br>
-            </div>
-        </form>
-        <form method="post">
-            <div>
-                Heeft u nog geen account?<br>
-                <button name="optieInlog" type="submit" value="2" formtarget="_self">Registreer</button>
-            </div>
-        </form>
-    <?php }
-    ?>
+        </div>
+    </div>
     <!-- end about -->
     <!-- footer -->
     <footer>

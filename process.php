@@ -91,13 +91,13 @@ if (empty($_POST["logout"]) != true) {
                                 <li class="button_user">
                                     <?php
                                     if (empty($_SESSION["loggedIn"]) == true || $_SESSION["loggedIn"] != true) { ?>
-                                        <form method="post">
-                                            <a class="button active"><?php echo '<button class="none" name="optieInlog" type="submit" value="1" formaction="login.php">Login</button>'; ?></a>
-                                            <a class="button" name="optieInlog" type="submit" value="2" formaction="login.php" href>Registreer</a>
+                                        <form action="login.php" method="post">
+                                            <button class="button active" name="optieInlog" type="submit" value="1">Login</button>
+                                            <button class="buttonLook" name="optieInlog" type="submit" value="2">Registreer</button>
                                         </form>
                                     <?php } else { ?>
                                         <form method="post">
-                                            <a class="button active"><?php echo '<button class="none" name="logout" type="submit" value="1" formtarget="_self" onclick="UnsetLogin()">Logout</button>'; ?></a>
+                                            <button class="button active" name="logout" type="submit" value="1" formtarget="_self" onclick="UnsetLogin()">Logout</button>
                                         </form>
                                     <?php } ?>
                                 </li>
