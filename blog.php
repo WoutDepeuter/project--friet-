@@ -12,7 +12,7 @@ if (empty($_POST["logout"]) != true) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- head -->
 <head>
     <!-- basic -->
     <meta charset="utf-8">
@@ -39,48 +39,39 @@ if (empty($_POST["logout"]) != true) {
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
+<!-- end head -->
 <!-- body -->
-
 <body class="main-layout blog_page">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
     </div>
-
-    <div class="wrapper">
     <!-- end loader -->
-
-     <div class="sidebar">
-            <!-- Sidebar  -->
-            <nav id="sidebar">
-
-                <div id="dismiss">
-                    <i class="fa fa-arrow-left"></i>
-                </div>
-
-                <ul class="list-unstyled components">
-
-                    <li >
-                        <a href="index.php">huis</a>
-                    </li>
-                    <li>
-                        <a href="about.php">About</a>
-                    </li>
-                    <li>
-                        <a href="recipe.php">Recipe</a>
-                    </li>
-                    <li class="active">
-                        <a href="blog.php">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.php">Contact Us</a>
-                    </li>
-                </ul>
-
-            </nav>
-        </div>
-
-    <div id="content">
+    <div class="sidebar">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <ul class="list-unstyled components">
+                <li >
+                    <a href="index.php">huis</a>
+                </li>
+                <li>
+                    <a href="about.php">About</a>
+                </li>
+                <li>
+                    <a href="recipe.php">Recipe</a>
+                </li>
+                <li class="active">
+                    <a href="blog.php">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.php">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <!-- header -->
     <header>
         <div class="container-fluid">
@@ -124,84 +115,77 @@ if (empty($_POST["logout"]) != true) {
         </div>
     </header>
     <!-- end header -->
-<div class="yellow_bg">
-   <div class="container">
+    <div class="yellow_bg">
+        <div class="container">
             <div class="row">
-               <div class="col-md-12">
-                  <div class="title">
-                     <h2>ons Blog</h2>
-                    
-                  </div>
-               </div>
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2>ons Blog</h2>
+                    </div>
+                </div>
             </div>
-          </div>
-</div>
-
-<!-- blog -->
-<div class="blog">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="title">
-          <i><img src="images/title.png" alt="#"/></i>
-          
-          <span>when looking at its layout. The point of using Lorem</span>
         </div>
-      </div>
     </div>
-    <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img1.png" alt="#"/>
-             <span>02 FEB 2019</span>
-            </figure>
-          </div>
-          <h3>Spicy Barger</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
+    <!-- blog -->
+    <div class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <i><img src="images/title.png" alt="#"/></i>
+                        <span>when looking at its layout. The point of using Lorem</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
+                        <div class="blog_box">
+                            <div class="blog_img_box">
+                                <figure><img src="images/blog_img1.png" alt="#"/>
+                                    <span>02 FEB 2019</span>
+                                </figure>
+                            </div>
+                            <h3>Spicy Barger</h3>
+                            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
+                    <div class="blog_box">
+                        <div class="blog_img_box">
+                            <figure><img src="images/blog_img2.png" alt="#"/>
+                                <span>02 FEB 2019</span>
+                            </figure>
+                        </div>
+                        <h3>Egg & Tosh</h3>
+                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="blog_box">
+                        <div class="blog_img_box">
+                            <figure><img src="images/blog_img3.png" alt="#"/>
+                                <span>02 FEB 2019</span>
+                            </figure>
+                        </div>
+                        <h3>Pizza</h3>
+                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img2.png" alt="#"/>
-             <span>02 FEB 2019</span>
-            </figure>
-          </div>
-          <h3>Egg & Tosh</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img3.png" alt="#"/>
-             <span>02 FEB 2019</span>
-            </figure>
-          </div>
-          <h3>Pizza</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-<!-- end blog -->
-
-
+    <!-- end blog -->
     <!-- footer -->
-    <fooetr>
+    <footer>
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
-                  <div class=" col-md-12">
-                    <h2>Request  A<strong class="white"> Call  Back</strong></h2>
-                  </div>
+                    <div class=" col-md-12">
+                        <h2>Request  A<strong class="white"> Call  Back</strong></h2>
+                    </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                      
                         <form class="main_form">
                             <div class="row">
-                             
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <input class="form-control" placeholder="Name" type="text" name="Name">
                                 </div>
@@ -229,16 +213,16 @@ if (empty($_POST["logout"]) != true) {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer_logo">
-                          <a href="index.php"><img src="images/logo1.jpg" alt="logo" /></a>
+                            <a href="index.php"><img src="images/logo1.jpg" alt="logo" /></a>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
-                            <li > <a href="index.php">huis</a></li>
-                            <li> <a href="about.php">About</a></li>
-                            <li> <a href="recipe.php">Recipe</a></li>
+                            <li><a href="index.php">huis</a></li>
+                            <li><a href="about.php">About</a></li>
+                            <li><a href="recipe.php">Recipe</a></li>
                             <li class="active"> <a href="blog.php">Blog</a></li>
-                            <li> <a href="contact.php">Contact us</a></li>
+                            <li><a href="contact.php">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-12">
@@ -252,13 +236,9 @@ if (empty($_POST["logout"]) != true) {
                     </div>
                 </div>
             </div>
-  
         </div>
-    </fooetr>
+    </footer>
     <!-- end footer -->
-
-    </div>
-    </div>
     <div class="overlay"></div>
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
@@ -266,10 +246,9 @@ if (empty($_POST["logout"]) != true) {
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    
-     <script src="js/jquery-3.0.0.min.js"></script>
-   <script type="text/javascript">
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript">
         $(document).ready(function() {
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
@@ -288,7 +267,5 @@ if (empty($_POST["logout"]) != true) {
             });
         });
     </script>
-
 </body>
-
 </html>

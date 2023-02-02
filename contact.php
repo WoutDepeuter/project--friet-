@@ -12,7 +12,7 @@ if (empty($_POST["logout"]) != true) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- head -->
 <head>
     <!-- basic -->
     <meta charset="utf-8">
@@ -39,48 +39,39 @@ if (empty($_POST["logout"]) != true) {
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
+<!-- end head -->
 <!-- body -->
-
 <body class="main-layout Contact_page">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
     </div>
-
-    <div class="wrapper">
     <!-- end loader -->
-
-     <div class="sidebar">
-            <!-- Sidebar  -->
-            <nav id="sidebar">
-
-                <div id="dismiss">
-                    <i class="fa fa-arrow-left"></i>
-                </div>
-
-                <ul class="list-unstyled components">
-
-                    <li >
-                        <a href="index.php">huis</a>
-                    </li>
-                    <li>
-                        <a href="about.php">over ons</a>
-                    </li>
-                    <li>
-                        <a href="recipe.php">Recepten</a>
-                    </li>
-                    <li>
-                        <a href="blog.php">Blog</a>
-                    </li>
-                    <li class="active">
-                        <a href="contact.php">Contacteer ons</a>
-                    </li>
-                </ul>
-
-            </nav>
-        </div>
-
-    <div id="content">
+    <div class="sidebar">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <ul class="list-unstyled components">
+                <li >
+                    <a href="index.php">huis</a>
+                </li>
+                <li>
+                    <a href="about.php">over ons</a>
+                </li>
+                <li>
+                    <a href="recipe.php">Recepten</a>
+                </li>
+                <li>
+                    <a href="blog.php">Blog</a>
+                </li>
+                <li class="active">
+                    <a href="contact.php">Contacteer ons</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <!-- header -->
     <header>
         <div class="container-fluid">
@@ -125,18 +116,16 @@ if (empty($_POST["logout"]) != true) {
     </header>
     <!-- end header -->
     <!-- footer -->
-    <fooetr>
+    <footer>
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
-                  <div class=" col-md-12">
-                    <h2>Request  A<strong class="white"> Call  Back</strong></h2>
-                  </div>
+                    <div class=" col-md-12">
+                        <h2>Request  A<strong class="white"> Call  Back</strong></h2>
+                    </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                      
                         <form class="main_form">
                             <div class="row">
-                             
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <input class="form-control" placeholder="Name" type="text" name="Name">
                                 </div>
@@ -164,15 +153,15 @@ if (empty($_POST["logout"]) != true) {
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer_logo">
-                          <a href="index.php"><img src="images/logo1.jpg" alt="logo" /></a>
+                            <a href="index.php"><img src="images/logo1.jpg" alt="logo" /></a>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
-                            <li > <a href="index.php">huis</a></li>
-                            <li> <a href="about.php">About</a></li>
-                            <li> <a href="recipe.php">Recipe</a></li>
-                            <li> <a href="blog.php">blog</a></li>
+                            <li><a href="index.php">huis</a></li>
+                            <li><a href="about.php">About</a></li>
+                            <li><a href="recipe.php">Recipe</a></li>
+                            <li><a href="blog.php">blog</a></li>
                             <li class="active"> <a href="contact.php">Contact us</a></li>
                         </ul>
                     </div>
@@ -187,17 +176,9 @@ if (empty($_POST["logout"]) != true) {
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <div class="container">
-                    <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
-                </div>
-            </div>
         </div>
-    </fooetr>
+    </footer>
     <!-- end footer -->
-
-    </div>
-    </div>
     <div class="overlay"></div>
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
@@ -205,10 +186,9 @@ if (empty($_POST["logout"]) != true) {
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    
-     <script src="js/jquery-3.0.0.min.js"></script>
-   <script type="text/javascript">
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript">
         $(document).ready(function() {
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
@@ -227,7 +207,5 @@ if (empty($_POST["logout"]) != true) {
             });
         });
     </script>
-
 </body>
-
 </html>

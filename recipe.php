@@ -12,7 +12,7 @@ if (empty($_POST["logout"]) != true) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- head -->
 <head>
     <!-- basic -->
     <meta charset="utf-8">
@@ -39,27 +39,21 @@ if (empty($_POST["logout"]) != true) {
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
+<!-- end head -->
 <!-- body -->
- 
 <body class="main-layout Recipes_page">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
     </div>
-
-    <div class="wrapper">
     <!-- end loader -->
-
-     <div class="sidebar">
+    <div class="sidebar">
             <!-- Sidebar  -->
             <nav id="sidebar">
-
                 <div id="dismiss">
                     <i class="fa fa-arrow-left"></i>
                 </div>
-
                 <ul class="list-unstyled components">
-
                     <li >
                         <a href="index.php">huis</a>
                     </li>
@@ -76,11 +70,9 @@ if (empty($_POST["logout"]) != true) {
                         <a href="contact.php">Contacteer ons</a>
                     </li>
                 </ul>
-
             </nav>
         </div>
-
-    <div id="content">
+    </div>
     <!-- header -->
     <header>
         <div class="container-fluid">
@@ -124,138 +116,128 @@ if (empty($_POST["logout"]) != true) {
         </div>
     </header>
     <!-- end header -->
-    
     <div class="yellow_bg">
-   <div class="container">
+        <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <div class="title">
-                     <h2>onze Recepten</h2>
-                    
-                  </div>
+                    <div class="title">
+                        <h2>onze Recepten</h2>
+                    </div>
                </div>
             </div>
-          </div>
-</div>
+        </div>
+    </div>
     <!-- section -->
     <section class="resip_section">
         <div class="container">
             <div class="row">
-               
                 <div class="col-md-12">
-            <div class="owl-carousel owl-theme">
-
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs1.png" alt="#" />
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="product_blog_img">
+                                <img src="images/rs1.png" alt="#" />
+                            </div>
+                        <div class="product_blog_cont">
+                            <h3>handgemaakt</h3>
+                            <h4><span class="theme_color">$</span>10</h4>
+                        </div>
                     </div>
-                    <div class="product_blog_cont">
-                        <h3>handgemaakt</h3>
-                        <h4><span class="theme_color">$</span>10</h4>
+                    <div class="item">
+                        <div class="product_blog_img">
+                            <img src="images/rs2.png" alt="#" />
+                        </div>
+                        <div class="product_blog_cont">
+                            <h3>Noodles</h3>
+                            <h4><span class="theme_color">$</span>20</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product_blog_img">
+                            <img src="images/rs3.png" alt="#" />
+                        </div>
+                        <div class="product_blog_cont">
+                            <h3>Egg</h3>
+                            <h4><span class="theme_color">$</span>30</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product_blog_img">
+                            <img src="images/rs4.png" alt="#" />
+                        </div>
+                        <div class="product_blog_cont">
+                            <h3>Sushi </h3>
+                            <h4><span class="theme_color">$</span>40</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product_blog_img">
+                            <img src="images/rs5.png" alt="#" />
+                        </div>
+                        <div class="product_blog_cont">
+                            <h3>The koffie pause met u mama</h3>
+                            <h4><span class="theme_color">$</span>50</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product_blog_img">
+                            <img src="images/rs1.png" alt="#" />
+                        </div>
+                        <div class="product_blog_cont">
+                            <h3>huismade</h3>
+                            <h4><span class="theme_color">$</span>10</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product_blog_img">
+                            <img src="images/rs2.png" alt="#" />
+                        </div>
+                        <div class="product_blog_cont">
+                            <h3>Noodles</h3>
+                            <h4><span class="theme_color">$</span>20</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product_blog_img">
+                            <img src="images/rs3.png" alt="#" />
+                        </div>
+                        <div class="product_blog_cont">
+                            <h3>Egg</h3>
+                            <h4><span class="theme_color">$</span>30</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product_blog_img">
+                            <img src="images/rs4.png" alt="#" />
+                        </div>
+                        <div class="product_blog_cont">
+                            <h3>Sushi Dizzy</h3>
+                            <h4><span class="theme_color">$</span>40</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product_blog_img">
+                            <img src="images/rs5.png" alt="#" />
+                        </div>
+                        <div class="product_blog_cont">
+                            <h3>The Coffee Break</h3>
+                            <h4><span class="theme_color">$</span>50</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs2.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Noodles</h3>
-                        <h4><span class="theme_color">$</span>20</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs3.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Egg</h3>
-                        <h4><span class="theme_color">$</span>30</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs4.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Sushi </h3>
-                        <h4><span class="theme_color">$</span>40</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs5.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>The koffie pause met u mama</h3>
-                        <h4><span class="theme_color">$</span>50</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs1.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>huismade</h3>
-                        <h4><span class="theme_color">$</span>10</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs2.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Noodles</h3>
-                        <h4><span class="theme_color">$</span>20</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs3.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Egg</h3>
-                        <h4><span class="theme_color">$</span>30</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs4.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Sushi Dizzy</h3>
-                        <h4><span class="theme_color">$</span>40</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs5.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>The Coffee Break</h3>
-                        <h4><span class="theme_color">$</span>50</h4>
-                    </div>
-                </div>
-
-            </div>
-        </div>
             </div>
         </div>
     </section>
-
-
     <!-- footer -->
-    <fooetr>
+    <footer>
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
-                  <div class=" col-md-12">
-                    <h2>Request  A<strong class="white"> Call  Back</strong></h2>
-                  </div>
+                    <div class=" col-md-12">
+                        <h2>Request  A<strong class="white"> Call  Back</strong></h2>
+                    </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                      
                         <form class="main_form">
                             <div class="row">
-                             
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <input class="form-control" placeholder="Name" type="text" name="Name">
                                 </div>
@@ -288,11 +270,11 @@ if (empty($_POST["logout"]) != true) {
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
-                            <li > <a href="index.php">huis</a></li>
-                            <li> <a href="about.php">About</a></li>
+                            <li><a href="index.php">huis</a></li>
+                            <li><a href="about.php">About</a></li>
                             <li class="active"> <a href="recipe.php">Recipe</a></li>
-                            <li> <a href="blog.php">blog</a></li>
-                            <li> <a href="contact.php">Contact us</a></li>
+                            <li><a href="blog.php">blog</a></li>
+                            <li><a href="contact.php">Contact us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-12">
@@ -306,14 +288,9 @@ if (empty($_POST["logout"]) != true) {
                     </div>
                 </div>
             </div>
-           
-            </div>
         </div>
-    </fooetr>
+    </footer>
     <!-- end footer -->
-
-    </div>
-    </div>
     <div class="overlay"></div>
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
@@ -321,10 +298,9 @@ if (empty($_POST["logout"]) != true) {
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    
-     <script src="js/jquery-3.0.0.min.js"></script>
-   <script type="text/javascript">
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript">
         $(document).ready(function() {
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
@@ -343,29 +319,26 @@ if (empty($_POST["logout"]) != true) {
             });
         });
     </script>
-
-<script>
-         $(document).ready(function() {
-           var owl = $('.owl-carousel');
-           owl.owlCarousel({
-             margin: 10,
-             nav: true,
-             loop: true,
-             responsive: {
-               0: {
-                 items: 1
-               },
-               600: {
-                 items: 2
-               },
-               1000: {
-                 items: 5
-               }
+    <script>
+       $(document).ready(function() {
+         var owl = $('.owl-carousel');
+         owl.owlCarousel({
+           margin: 10,
+           nav: true,
+           loop: true,
+           responsive: {
+             0: {
+               items: 1
+             },
+             600: {
+               items: 2
+             },
+             1000: {
+               items: 5
              }
-           })
+           }
          })
-      </script>
-
+       })
+    </script>
 </body>
-
 </html>

@@ -12,7 +12,7 @@ if (empty($_POST["logout"]) != true) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- head -->
 <head>
     <!-- basic -->
     <meta charset="utf-8">
@@ -36,51 +36,42 @@ if (empty($_POST["logout"]) != true) {
     <!-- awesome fontfamily -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
+<!-- end head -->
 <!-- body -->
-
 <body class="main-layout about_page">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
     </div>
-
-    <div class="wrapper">
     <!-- end loader -->
-
-     <div class="sidebar">
-            <!-- Sidebar  -->
-            <nav id="sidebar">
-
-                <div id="dismiss">
-                    <i class="fa fa-arrow-left"></i>
-                </div>
-
-                <ul class="list-unstyled components">
-
-                    <li >
-                        <a href="index.php">thuis</a>
-                    </li>
-                    <li class="active">
-                        <a href="about.php">over ons</a>
-                    </li>
-                    <li>
-                        <a href="recipe.php">recept</a>
-                    </li>
-                    <li>
-                        <a href="blog.php">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.php">contacteer ons</a>
-                    </li>
-                </ul>
-
-            </nav>
-        </div>
-
-    <div id="content">
+    <div class="sidebar">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <ul class="list-unstyled components">
+                <li >
+                    <a href="index.php">thuis</a>
+                </li>
+                <li class="active">
+                    <a href="about.php">over ons</a>
+                </li>
+                <li>
+                    <a href="recipe.php">recept</a>
+                </li>
+                <li>
+                    <a href="blog.php">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.php">contacteer ons</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <!-- header -->
     <header>
         <div class="container-fluid">
@@ -124,65 +115,58 @@ if (empty($_POST["logout"]) != true) {
         </div>
     </header>
     <!-- end header -->
-    
     <div class="yellow_bg">
-   <div class="container">
+        <div class="container">
             <div class="row">
-               <div class="col-md-12">
-                  <div class="title">
-                     <h2>About</h2>
-                    
-                  </div>
-               </div>
+                <div class="col-md-12">
+                    <div class="title">
+                       <h2>About</h2>
+                    </div>
+                </div>
             </div>
-          </div>
-</div>
-<!-- about -->
-<div class="about">
-    <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-             <div class="title">
-                <i><img src="images/title.png" alt="#"/></i>
-                
-                <span>iets over frieten ik kwni dit is placeholder tekst about-img
-                   <br> page when looking at its layout. The point of using Lorem
-                </span>
-             </div>
-          </div>
-       </div>
-       <div class="row">
-         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-             <div class="about_box">
-                 <h3>Best Food</h3>
-                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscureContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard </p>
-                 <a href="#">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-             </div>
-         </div>
-          <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
-             <div class="about_img">
-                 <figure><img src="images/about-img.jpg" alt="#/"></figure>
-             </div>
-         </div>      
-       </div> 
+        </div>
     </div>
-</div>
-<!-- end about -->
-
-
+    <!-- about -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <i><img src="images/title.png" alt="#"/></i>
+                        <span>iets over frieten ik kwni dit is placeholder tekst about-img
+                            <br> page when looking at its layout. The point of using Lorem
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="about_box">
+                        <h3>Best Food</h3>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscureContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard </p>
+                        <a href="#">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
+                    <div class="about_img">
+                        <figure><img src="images/about-img.jpg" alt="#/"></figure>
+                    </div>
+                </div>      
+            </div> 
+        </div>
+    </div>
+    <!-- end about -->
     <!-- footer -->
-    <fooetr>
+    <footer>
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
-                  <div class=" col-md-12">
-                    <h2>Request  A<strong class="white"> Call  Back</strong></h2>
-                  </div>
+                    <div class=" col-md-12">
+                        <h2>Request  A<strong class="white"> Call  Back</strong></h2>
+                    </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                      
                         <form class="main_form">
                             <div class="row">
-                             
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <input class="form-control" placeholder="Name" type="text" name="Name">
                                 </div>
@@ -203,23 +187,23 @@ if (empty($_POST["logout"]) != true) {
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <div class="img-box">
-                            <figure><img src="images/img.jpg" alt="img" /></figure>
+                            <figure><img src="images/img.jpg" alt="img"/></figure>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="footer_logo">
-                          <a href="index.php"><img src="images/logo1.jpg" alt="logo" /></a>
+                            <a href="index.php"><img src="images/logo1.jpg" alt="logo" /></a>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <ul class="lik">
-                            <li > <a href="index.php">thuis</a></li>
+                            <li><a href="index.php">thuis</a></li>
                             <li class="active"> <a href="about.php">over ons</a></li>
-                            <li> <a href="recipe.php">Recept</a></li>
-                            <li> <a href="blog.php">blog</a></li>
-                            <li> <a href="contact.php">Contacteer ons</a></li>
+                            <li><a href="recipe.php">Recept</a></li>
+                            <li><a href="blog.php">blog</a></li>
+                            <li><a href="contact.php">Contacteer ons</a></li>
                         </ul>
                     </div>
                     <div class="col-md-12">
@@ -233,14 +217,9 @@ if (empty($_POST["logout"]) != true) {
                     </div>
                 </div>
             </div>
-                </div>
-            </div>
         </div>
-    </fooetr>
+    </footer>
     <!-- end footer -->
-
-    </div>
-    </div>
     <div class="overlay"></div>
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
@@ -248,10 +227,9 @@ if (empty($_POST["logout"]) != true) {
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    
-     <script src="js/jquery-3.0.0.min.js"></script>
-   <script type="text/javascript">
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript">
         $(document).ready(function() {
             $("#sidebar").mCustomScrollbar({
                 theme: "minimal"
@@ -270,7 +248,5 @@ if (empty($_POST["logout"]) != true) {
             });
         });
     </script>
-
 </body>
-
 </html>

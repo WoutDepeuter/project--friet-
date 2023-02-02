@@ -12,6 +12,7 @@ if (empty($_POST["logout"]) != true) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<!-- head -->
 <head>
     <!-- basic -->
     <meta charset="utf-8">
@@ -38,14 +39,13 @@ if (empty($_POST["logout"]) != true) {
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
+<!-- end head -->
 <!-- body -->
 <body class="main-layout about_page">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="" /></div>
     </div>
-
-    <div class="wrapper">
     <!-- end loader -->
     <div class="sidebar">
         <!-- Sidebar  -->
@@ -72,7 +72,6 @@ if (empty($_POST["logout"]) != true) {
             </ul>
         </nav>
     </div>
-    <div id="content">
     <!-- header -->
     <header>
         <div class="container-fluid">
