@@ -271,10 +271,10 @@ if (empty($_POST["logout"]) != true) {
                     <div class="col-md-12">
                         <ul class="lik">
                             <li><a href="index.php">huis</a></li>
-                            <li><a href="about.php">About</a></li>
-                            <li class="active"> <a href="recipe.php">Recipe</a></li>
+                            <li><a href="about.php">over ons</a></li>
+                            <li class="active"> <a href="recipe.php">Recept</a></li>
                             <li><a href="blog.php">blog</a></li>
-                            <li><a href="contact.php">Contact us</a></li>
+                            <li><a href="contact.php">Contacteer ons</a></li>
                         </ul>
                     </div>
                     <div class="col-md-12">
