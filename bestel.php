@@ -117,7 +117,24 @@ if (empty($_POST["logout"]) != true) {
     <!-- end header -->
 
     <!-- besteldeel dingske ---->
-
+    <section class="veg_section layout_padding">
+          <div class="container">
+            <div class="heading_container heading_center">
+              <h2>
+              onze  Groenten
+              </h2>
+              <p>
+                which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't an
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="box">
+                  <div class="img-box">
+                    <img src="images/p1.png" alt="">
+                  </div>
+                  <div >
+                 
         <!-- end veg section -->
 
     
