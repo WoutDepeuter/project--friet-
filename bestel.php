@@ -117,91 +117,13 @@ if (empty($_POST["logout"]) != true) {
     <!-- end header -->
 
     <!-- besteldeel dingske ---->
-    <section class="veg_section layout_padding">
-          <div class="container">
-            <div class="heading_container heading_center">
-              <h2>
-              onze  Groenten
-              </h2>
-              <p>
-                which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't an
-              </p>
-            </div>
-            <div class="row">
-              <div class="col-md-6 col-lg-4">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/p1.png" alt="">
-                  </div>
-                  <div >
+
+                
                  
         <!-- end veg section -->
 
     
-    <!-- footer -->
-    <footer>
-        <div class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class=" col-md-12">
-                        <h2>Request  A<strong class="white"> Call  Back</strong></h2>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <form class="main_form">
-                            <div class="row">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Name" type="text" name="Name">
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Email" type="text" name="Email">
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Phone" type="text" name="Phone">
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <button class="send">Send</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="img-box">
-                            <figure><img src="images/img.jpg" alt="img"/></figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="footer_logo">
-                            <a href="index.php"><img src="images/logo1.jpg" alt="logo" /></a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <ul class="lik">
-                            <li><a href="index.php">thuis</a></li>
-                            <li class="active"> <a href="about.php">over ons</a></li>
-                            <li><a href="recipe.php">Recept</a></li>
-                            <li><a href="blog.php">blog</a></li>
-                            <li><a href="contact.php">Contacteer ons</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="new">
-                            <h3>nieuwsbrief</h3>
-                            <form class="newtetter">
-                                <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                                <button class="submit">abboneer</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- end footer -->
+    
     <div class="overlay"></div>
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
