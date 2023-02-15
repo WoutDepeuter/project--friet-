@@ -129,7 +129,7 @@ if (empty($_POST["logout"]) != true) {
                                             <div class="slider_cont">
                                                 <h3>Discover Restaurants<br>That deliver near You</h3>
                                                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                                                <a class="main_bt_border" href="#">Order Now</a>
+                                                <a class="main_bt_border" href="bestel.php">Order Now</a>
                                             </div>
                                         </div>
                                         <div class="col-md-7">
