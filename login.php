@@ -190,7 +190,7 @@ if (empty($_POST["logout"]) != true) {
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                         <form class="main_form" method="post">
-                            <div class="row">
+                            <div >
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                     <input class="form-control" placeholder="Name" type="text" name="Name">
                                 </div>
