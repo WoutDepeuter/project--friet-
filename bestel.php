@@ -126,108 +126,108 @@ if (empty($_POST["logout"]) != true) {
   <!--formulier---->
 <br>
   <br>
-  <br>
+  <br>  
   <section>
 
 <br>
-  <center>
-    <br>
-    <h1> Bestel hier onze frietjes en onze lekker frituursnack</h1>
-    <table>
-      <form action="besteling.php" method="post">
-      <tr>
-    <td><h1>contact gegevens</h1></td>
-</tr>
+    <center>
+      <br>
+      <h1> Bestel hier onze frietjes en onze lekker frituursnack</h1>
+      <table>
+        <form action="bestelling.php" method="post">
         <tr>
-          <td><label for="naam"></label></td>
-          <td><input type="text" id="naam" name="naam" placeholder="naam" required /></td>
-        </tr>
-        </tr>
-        <tr>
-          <td> <label for="achternaam"></label>
-          <td><input type="text" id="achternaam" name="achternaam" placeholder="achternaam" required /></td>
-        </tr>
-        <tr>
-          <td><label for="straat"></label></td>
-          <td> <input type="text" id="straat" name="straat" placeholder="straat" required /></td>
-        </tr>
-        <tr>
-          <td><label for="huisnummer"></label></td>
-          <td><input type="number" id="huisnummer" name="huisnummer" placeholder="huisnummer" min 0 required /> </td>
-        </tr>
-        <tr>
-          <td><label for="postcode"></label></td>
-          <td><input type="number" id="postcode" name="postcode" placeholder="postcode" required /></td>
-        </tr>
+      <td><h1>contact gegevens</h1></td>
+  </tr>
+          <tr>
+            <td><label for="naam"></label></td>
+            <td><input type="text" id="naam" name="naam" placeholder="naam" required /></td>
+          </tr>
+          </tr>
+          <tr>
+            <td> <label for="achternaam"></label>
+            <td><input type="text" id="achternaam" name="achternaam" placeholder="achternaam" required /></td>
+          </tr>
+          <tr>
+            <td><label for="straat"></label></td>
+            <td> <input type="text" id="straat" name="straat" placeholder="straat" required /></td>
+          </tr>
+          <tr>
+            <td><label for="huisnummer"></label></td>
+            <td><input type="number" id="huisnummer" name="huisnummer" placeholder="huisnummer" min 0 required /> </td>
+          </tr>
+          <tr>
+            <td><label for="postcode"></label></td>
+            <td><input type="number" id="postcode" name="postcode" placeholder="postcode" required /></td>
+          </tr>
 
 
-<tr>
-    <td><h1>frietjes</h1></td>
-</tr>
+  <tr>
+      <td><h1>frietjes</h1></td>
+  </tr>
 
 
-        <tr>
-          <td><label for="hoeveel">grote friet</label></td>
-          <td> <input type="number" id="hoeveel1" name="hoeveel1" placeholder="hoeveel" min=0  required/> </td>
-        </tr>
-        <tr>
-          <td><label for="hoeveel">kleine friet</label></td>
-          <td> <input type="number" id="hoeveel2" name="hoeveel2" placeholder="hoeveel" min=0  required/> </td>
-         
-        </tr>
+          <tr>
+            <td><label for="hoeveel">grote friet</label></td>
+            <td> <input type="number" id="hoeveel1" name="hoeveel1" placeholder="hoeveel" min=0  required/> </td>
+          </tr>
+          <tr>
+            <td><label for="hoeveel">kleine friet</label></td>
+            <td> <input type="number" id="hoeveel2" name="hoeveel2" placeholder="hoeveel" min=0  required/> </td>
+          
+          </tr>
 
-        <tr>
-    <td><h1>vleesjes</h1></td>
-</tr>
-  
-        <tr>
-          <td><label for="hoeveel">curryworst</label></td>
-          <td> <input type="number" id="hoeveel3" name="hoeveel3" placeholder="hoeveel" min=0 required/> </td>
-        </tr>
-        <tr>
-          <td><label for="hoeveel">viandel </label></td>
-          <td> <input type="number" id="hoeveel4" name="hoeveel4" placeholder="hoeveel" min=0  required/> </td>
-        </tr>
-        <tr>
-          <td><label for="hoeveel">kipnuggets</label></td>
-          <td> <input type="number" id="hoeveel5" name="hoeveel5" placeholder="hoeveel" min=0 required/> </td>
-        </tr>
-        <tr>
-          <td><label for="hoeveel">loempia</label></td>
-          <td> <input type="number" id="hoeveel6" name="hoeveel6" placeholder="hoeveel" min=0 required/> </td>
-        </tr>
-        <tr>
-          <td><label for="hoeveel">stoofvlees</label></td>
-          <td> <input type="number" id="hoeveel7" name="hoeveel7" placeholder="hoeveel" min=0 required /> </td>
-        </tr>
+          <tr>
+      <td><h1>vleesjes</h1></td>
+  </tr>
+    
+          <tr>
+            <td><label for="hoeveel">curryworst</label></td>
+            <td> <input type="number" id="hoeveel3" name="hoeveel3" placeholder="hoeveel" min=0 required/> </td>
+          </tr>
+          <tr>
+            <td><label for="hoeveel">viandel </label></td>
+            <td> <input type="number" id="hoeveel4" name="hoeveel4" placeholder="hoeveel" min=0  required/> </td>
+          </tr>
+          <tr>
+            <td><label for="hoeveel">kipnuggets</label></td>
+            <td> <input type="number" id="hoeveel5" name="hoeveel5" placeholder="hoeveel" min=0 required/> </td>
+          </tr>
+          <tr>
+            <td><label for="hoeveel">loempia</label></td>
+            <td> <input type="number" id="hoeveel6" name="hoeveel6" placeholder="hoeveel" min=0 required/> </td>
+          </tr>
+          <tr>
+            <td><label for="hoeveel">stoofvlees</label></td>
+            <td> <input type="number" id="hoeveel7" name="hoeveel7" placeholder="hoeveel" min=0 required /> </td>
+          </tr>
 
-          <td><label for="hoeveel">kaaskrokket </label></td>
-          <td> <input type="number" id="hoeveel8" name="hoeveel8" placeholder="hoeveel" min=0 required /> </td>
-        </tr>
-        <tr>
-          <td><label for="hoeveel">cervella </label></td>
-          <td> <input type="number" id="hoeveel9" name="hoeveel9" placeholder="hoeveel" min=0 required /> </td>
-        </tr>
-        <tr>
-          <td><label for="hoeveel">berenpoot </label></td>
-          <td> <input type="number" id="hoeveel10" name="hoeveel10" placeholder="hoeveel" min=0 required /> </td>
-        </tr>
-        <tr>
-    <td><h1>sausjes</h1></td>
-</tr>
-        <tr>
-          <td><label for="hoeveel">mayonaise</label></td>
-          <td> <input type="number" id="hoeveel11" name="hoeveel11" placeholder="hoeveel" min=0  required/> </td>
-        <tr>
-          <td><label for="hoeveel">ketchup</label></td>
-          <td> <input type="number" id="hoeveel12" name="hoeveel12" placeholder="hoeveel" min=0  required/> </td>
-        </tr>
-        <tr>
-          <td><label for="hoeveel">potje speciaal saus </label></td>
-          <td> <input type="number" id="hoeveel13" name="hoeveel13" placeholder="hoeveel" min=0  required/> </td>
-        </tr>
-        <tr>
-        </tr>
+            <td><label for="hoeveel">kaaskrokket </label></td>
+            <td> <input type="number" id="hoeveel8" name="hoeveel8" placeholder="hoeveel" min=0 required /> </td>
+          </tr>
+          <tr>
+            <td><label for="hoeveel">cervella </label></td>
+            <td> <input type="number" id="hoeveel9" name="hoeveel9" placeholder="hoeveel" min=0 required /> </td>
+          </tr>
+          <tr>
+            <td><label for="hoeveel">berenpoot </label></td>
+            <td> <input type="number" id="hoeveel10" name="hoeveel10" placeholder="hoeveel" min=0 required /> </td>
+          </tr>
+          <tr>
+      <td><h1>sausjes</h1></td>
+  </tr>
+          <tr>
+            <td><label for="hoeveel">mayonaise</label></td>
+            <td> <input type="number" id="hoeveel11" name="hoeveel11" placeholder="hoeveel" min=0  required/> </td>
+          <tr>
+            <td><label for="hoeveel">ketchup</label></td>
+            <td> <input type="number" id="hoeveel12" name="hoeveel12" placeholder="hoeveel" min=0  required/> </td>
+          </tr>
+          <tr>
+            <td><label for="hoeveel">potje speciaal saus </label></td>
+            <td> <input type="number" id="hoeveel13" name="hoeveel13" placeholder="hoeveel" min=0  required/> </td>
+          </tr>
+          <tr>
+          </tr>
     
 
     </table>

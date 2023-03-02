@@ -222,6 +222,7 @@ if (empty($_POST["logout"]) != true) {
                             <h3>The Coffee Break</h3>
                             <h4><span class="theme_color">$</span>50</h4>
                         </div>
+                        
                     </div>
                 </div>
             </div>
