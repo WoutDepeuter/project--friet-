@@ -199,29 +199,29 @@ if (empty($_POST["logout"]) != true) {
         </tr>
 
           <td><label for="hoeveel">kaaskrokket </label></td>
-          <td> <input type="number" id="hoeveel11" name="hoeveel11" placeholder="hoeveel" min=0 required /> </td>
+          <td> <input type="number" id="hoeveel8" name="hoeveel8" placeholder="hoeveel" min=0 required /> </td>
         </tr>
         <tr>
           <td><label for="hoeveel">cervella </label></td>
-          <td> <input type="number" id="hoeveel12" name="hoeveel12" placeholder="hoeveel" min=0 required /> </td>
+          <td> <input type="number" id="hoeveel9" name="hoeveel9" placeholder="hoeveel" min=0 required /> </td>
         </tr>
         <tr>
           <td><label for="hoeveel">berenpoot </label></td>
-          <td> <input type="number" id="hoeveel13" name="hoeveel13" placeholder="hoeveel" min=0 required /> </td>
+          <td> <input type="number" id="hoeveel10" name="hoeveel10" placeholder="hoeveel" min=0 required /> </td>
         </tr>
         <tr>
     <td><h1>sausjes</h1></td>
 </tr>
         <tr>
           <td><label for="hoeveel">mayonaise</label></td>
-          <td> <input type="number" id="hoeveel8" name="hoeveel8" placeholder="hoeveel" min=0  required/> </td>
+          <td> <input type="number" id="hoeveel11" name="hoeveel11" placeholder="hoeveel" min=0  required/> </td>
         <tr>
           <td><label for="hoeveel">ketchup</label></td>
-          <td> <input type="number" id="hoeveel9" name="hoeveel9" placeholder="hoeveel" min=0  required/> </td>
+          <td> <input type="number" id="hoeveel12" name="hoeveel12" placeholder="hoeveel" min=0  required/> </td>
         </tr>
         <tr>
           <td><label for="hoeveel">potje speciaal saus </label></td>
-          <td> <input type="number" id="hoeveel10" name="hoeveel10" placeholder="hoeveel" min=0  required/> </td>
+          <td> <input type="number" id="hoeveel13" name="hoeveel13" placeholder="hoeveel" min=0  required/> </td>
         </tr>
         <tr>
         </tr>
