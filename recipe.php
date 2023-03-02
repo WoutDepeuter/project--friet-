@@ -69,9 +69,6 @@ if (empty($_POST["logout"]) != true) {
                     <li>
                         <a href="contact.php">Contacteer ons</a>
                     </li>
-                    <li >
-                        <a href="bestel.php">bestel</a>
-                    </li>
                 </ul>
             </nav>
         </div>

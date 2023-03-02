@@ -75,9 +75,6 @@ if (empty($_POST["seriousShit"]) == false) {
                     <li>
                         <a href="contact.php">Contact Us</a>
                     </li>
-                    <li >
-                        <a href="bestel.php">bestel</a>
-                    </li>
                 </ul>
             </nav>
         </div>

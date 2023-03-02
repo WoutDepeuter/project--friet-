@@ -53,20 +53,23 @@ if (empty($_POST["logout"]) != true) {
                 <i class="fa fa-arrow-left"></i>
             </div>
             <ul class="list-unstyled components">
-                <li >
-                    <a href="index.php">thuis</a>
+            <li class="active">
+                <a href="index.php">Thuis</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="about.php">over ons</a>
                 </li>
                 <li>
-                    <a href="recipe.php">recept</a>
+                    <a href="recipe.php">Recept</a>
+                </li>
+                <li>
+                    <a href="bestel.php">Bestel</a>
                 </li>
                 <li>
                     <a href="blog.php">Blog</a>
                 </li>
                 <li>
-                    <a href="contact.php">contacteer ons</a>
+                    <a href="contact.php">Contact Us</a>
                 </li>
                 <li >
                         <a href="bestel.php">bestel</a>
