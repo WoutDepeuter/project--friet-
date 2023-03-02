@@ -54,20 +54,23 @@ if (empty($_POST["logout"]) != true) {
                 <i class="fa fa-arrow-left"></i>
             </div>
             <ul class="list-unstyled components">
-                <li >
-                    <a href="index.php">thuis</a>
-                </li>
                 <li class="active">
-                    <a href="about.php">over ons</a>
+                <a href="index.php">Thuis</a>
                 </li>
                 <li>
-                    <a href="recipe.php">recept</a>
+                    <a href="about.php">Over ons</a>
+                </li>
+                <li>
+                    <a href="recipe.php">Recept</a>
+                </li>
+                <li>
+                    <a href="bestel.php">Bestel</a>
                 </li>
                 <li>
                     <a href="blog.php">Blog</a>
                 </li>
                 <li>
-                    <a href="contact.php">contacteer ons</a>
+                    <a href="contact.php">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -115,6 +118,7 @@ if (empty($_POST["logout"]) != true) {
         </div>
     </header>
     <!-- end header -->
+<center>  
     <div class="yellow_bg">
         <div class="container">
             <div class="row">
@@ -135,50 +139,59 @@ if (empty($_POST["logout"]) != true) {
         </div>
     </div>
     <!-- about -->
+    <body>
     <div class="about">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
+                <div>
                     <?php
                     if ((empty($_POST["optieInlog"]) == true) || ($_POST["optieInlog"] == "2")) {
                         ?>
+                        <center>
+                        <body>
                         <form action="process.php" method="post">
                             <div class="container">
-                                Welkom tot de registratie pagina, hier kunt u zich een account registreren.<br><br>
-                                Gebruikersnaam :<br>
+                                <h1>Sign up</h1>
+                                <h3>Welkom tot de registratie pagina, hier kunt u zich een account registreren.</h3><br>
+                                Gebruikersnaam :<br>                             
                                 <input type="text" name="eName" pattern="[A-z0-9À-ž\s]{2,}" title="Drie of meer characters" required><br>
                             </div>
                             <div class="container">
                                 Paswoord :<br>
                                 <input type="password" name="pass" pattern=".{8,}" title="Acht of meer characters" required><br><br>
-                            </div>
-                            <div>
                                 <button name="registreren" type="submit" value="1">Registreren</button><br><br>
                             </div>
                         </form>
+                        </body>  
+                        </center>                     
                     <?php } else if ($_POST["optieInlog"] == "1") {
                         //$_SESSION["optieInlog"] = "1";
                         ?>
+                        <center>
+                        <body>
                         <form action="process.php" method="post">
                             <div class="container">
-                                Welkom tot de inlog pagina, hier kunt u zich inloggen.<br><br>
+                                <h1>Login</h1>
+                                <h3>Welkom tot de inlog pagina, hier kunt u zich inloggen.</h3><br>
                                 Gebruikersnaam :<br>
                                 <input type="text" name="eName" pattern="[A-z0-9À-ž\s]{2,}" title="Drie of meer characters" required><br>
                             </div>
                             <div class="container">
                                 Paswoord :<br>
                                 <input type="password" name="pass" pattern=".{8,}" title="Acht of meer characters" required><br><br>
-                            </div>
-                            <div>
                                 <button name="registreren" type="submit" value="0">Inloggen</button><br><br>
                             </div>
                         </form>
+                        </body>
+                        </center>
                     <?php }
                     ?>
                 </div>
             </div>
         </div>
     </div>
+    </body>
+</center>
     <!-- end about -->
     <!-- footer -->
     <footer>

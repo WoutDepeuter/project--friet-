@@ -61,20 +61,23 @@ if (empty($_POST["seriousShit"]) == false) {
                 </div>
                 <ul class="list-unstyled components">
                     <li class="active">
-                        <a href="index.php">thuis</a>
-                    </li>
-                    <li>
-                        <a href="about.php">over ons</a>
-                    </li>
-                    <li>
-                        <a href="recipe.php">recept</a>
-                    </li>
-                    <li>
-                        <a href="blog.php">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.php">Contact Us</a>
-                    </li>
+                    <a href="index.php">Thuis</a>
+                </li>
+                <li>
+                    <a href="about.php">over ons</a>
+                </li>
+                <li>
+                    <a href="recipe.php">Recept</a>
+                </li>
+                <li>
+                    <a href="bestel.php">Bestel</a>
+                </li>
+                <li>
+                    <a href="blog.php">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.php">Contact Us</a>
+                </li>
                 </ul>
             </nav>
         </div>
