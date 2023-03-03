@@ -303,8 +303,8 @@ if (empty($_POST["logout"]) != true) {
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="about_box">
-                            <h3>Best Food</h3>
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscureContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard </p>
+                            <h3>een echte bom van smaken</h3>
+                            <p>frietjes zoals die van ons heb je nog nooit gegeten van echte belgische boeren die dag en nacht werken voor de best kwaliteit er is geen slavernij of kinderardbeid bij aan de pas gekomen</p>
                             <a href="#">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
